@@ -1,0 +1,21 @@
+{
+    "presets": [
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "$components":"./src/components",
+                    "$middlewares": "./src/middlewares",
+                    "$models": "./src/models",
+                    "$libs": "./src/libs",
+                    "$config": "./src/config",
+                    "$helpers": "./src/helpers",
+                    "$views": "./src/views"
+                }
+            }
+        ]
+    ]
+}
